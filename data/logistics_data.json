@@ -1,0 +1,280 @@
+{
+  "company": "EuroLogix GmbH",
+  "last_updated": "2026-05-01T09:00:00Z",
+
+  "shipments": [
+    {
+      "id": "ORD-4821",
+      "origin": "Hamburg",
+      "destination": "Berlin",
+      "driver_id": "DRV-001",
+      "truck_id": "TRK-007",
+      "cargo": "Electronics",
+      "weight_kg": 1200,
+      "status": "DELAYED",
+      "delay_minutes": 47,
+      "delay_reason": "A2 motorway congestion near Hannover",
+      "scheduled_eta": "2026-05-01T11:00:00Z",
+      "current_eta": "2026-05-01T11:47:00Z",
+      "customer": "TechHub Berlin GmbH",
+      "priority": "HIGH"
+    },
+    {
+      "id": "ORD-4822",
+      "origin": "Munich",
+      "destination": "Frankfurt",
+      "driver_id": "DRV-002",
+      "truck_id": "TRK-003",
+      "cargo": "Automotive Parts",
+      "weight_kg": 3400,
+      "status": "ON_TIME",
+      "delay_minutes": 0,
+      "delay_reason": null,
+      "scheduled_eta": "2026-05-01T14:30:00Z",
+      "current_eta": "2026-05-01T14:30:00Z",
+      "customer": "BMW AG Supplier",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "ORD-4823",
+      "origin": "Stuttgart",
+      "destination": "Cologne",
+      "driver_id": "DRV-003",
+      "truck_id": "TRK-011",
+      "cargo": "Perishable Goods",
+      "weight_kg": 800,
+      "status": "DELAYED",
+      "delay_minutes": 120,
+      "delay_reason": "Vehicle breakdown — replacement truck dispatched",
+      "scheduled_eta": "2026-05-01T13:00:00Z",
+      "current_eta": "2026-05-01T15:00:00Z",
+      "customer": "FreshMart Cologne",
+      "priority": "CRITICAL"
+    },
+    {
+      "id": "ORD-4824",
+      "origin": "Berlin",
+      "destination": "Vienna",
+      "driver_id": "DRV-004",
+      "truck_id": "TRK-002",
+      "cargo": "Machinery",
+      "weight_kg": 5200,
+      "status": "ON_TIME",
+      "delay_minutes": 0,
+      "delay_reason": null,
+      "scheduled_eta": "2026-05-01T18:00:00Z",
+      "current_eta": "2026-05-01T18:00:00Z",
+      "customer": "Vienna Manufacturing AG",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "ORD-4825",
+      "origin": "Dusseldorf",
+      "destination": "Hamburg",
+      "driver_id": "DRV-005",
+      "truck_id": "TRK-009",
+      "cargo": "Retail Goods",
+      "weight_kg": 2100,
+      "status": "DELAYED",
+      "delay_minutes": 25,
+      "delay_reason": "Border paperwork delay at customs checkpoint",
+      "scheduled_eta": "2026-05-01T12:30:00Z",
+      "current_eta": "2026-05-01T12:55:00Z",
+      "customer": "NordRetail GmbH",
+      "priority": "MEDIUM"
+    },
+    {
+      "id": "ORD-4826",
+      "origin": "Frankfurt",
+      "destination": "Stuttgart",
+      "driver_id": "DRV-002",
+      "truck_id": "TRK-005",
+      "cargo": "Chemicals",
+      "weight_kg": 950,
+      "status": "ON_TIME",
+      "delay_minutes": 0,
+      "delay_reason": null,
+      "scheduled_eta": "2026-05-01T16:00:00Z",
+      "current_eta": "2026-05-01T16:00:00Z",
+      "customer": "ChemWorks Stuttgart",
+      "priority": "HIGH"
+    }
+  ],
+
+  "drivers": [
+    {
+      "id": "DRV-001",
+      "name": "Klaus Müller",
+      "phone": "+49-170-1234567",
+      "current_location": "A2 near Hannover",
+      "hours_driven_today": 3.5,
+      "max_hours": 9,
+      "delays_this_week": 3,
+      "avg_delay_minutes": 35,
+      "total_deliveries_week": 12,
+      "rating": 3.8
+    },
+    {
+      "id": "DRV-002",
+      "name": "Sara Kramer",
+      "phone": "+49-171-2345678",
+      "current_location": "A9 near Nuremberg",
+      "hours_driven_today": 2.1,
+      "max_hours": 9,
+      "delays_this_week": 0,
+      "avg_delay_minutes": 0,
+      "total_deliveries_week": 9,
+      "rating": 4.9
+    },
+    {
+      "id": "DRV-003",
+      "name": "Markus Weber",
+      "phone": "+49-172-3456789",
+      "current_location": "Stuttgart depot (breakdown)",
+      "hours_driven_today": 1.0,
+      "max_hours": 9,
+      "delays_this_week": 2,
+      "avg_delay_minutes": 75,
+      "total_deliveries_week": 11,
+      "rating": 3.5
+    },
+    {
+      "id": "DRV-004",
+      "name": "Elena Bauer",
+      "phone": "+49-173-4567890",
+      "current_location": "A9 near Dresden",
+      "hours_driven_today": 5.2,
+      "max_hours": 9,
+      "delays_this_week": 1,
+      "avg_delay_minutes": 8,
+      "total_deliveries_week": 14,
+      "rating": 4.8
+    },
+    {
+      "id": "DRV-005",
+      "name": "Ralf Schneider",
+      "phone": "+49-174-5678901",
+      "current_location": "Customs checkpoint B57",
+      "hours_driven_today": 4.0,
+      "max_hours": 9,
+      "delays_this_week": 4,
+      "avg_delay_minutes": 22,
+      "total_deliveries_week": 10,
+      "rating": 3.2
+    }
+  ],
+
+  "road_conditions": [
+    {
+      "road": "A2",
+      "segment": "Hannover West – Hannover Ost",
+      "condition": "HEAVY_CONGESTION",
+      "impact_minutes": 45,
+      "cause": "Traffic accident — 2 lanes closed",
+      "expected_clear": "2026-05-01T13:00:00Z"
+    },
+    {
+      "road": "A7",
+      "segment": "Frankfurt Süd – Darmstadt",
+      "condition": "LANE_CLOSURE",
+      "impact_minutes": 30,
+      "cause": "Road maintenance works",
+      "expected_clear": "2026-05-01T18:00:00Z"
+    },
+    {
+      "road": "A3",
+      "segment": "Frankfurt – Cologne (Rastatt section)",
+      "condition": "CONSTRUCTION",
+      "impact_minutes": 15,
+      "cause": "Bridge construction",
+      "expected_clear": "2026-06-15T00:00:00Z"
+    },
+    {
+      "road": "B10",
+      "segment": "Stuttgart bypass",
+      "condition": "CLEAR",
+      "impact_minutes": 0,
+      "cause": null,
+      "expected_clear": null
+    },
+    {
+      "road": "A9",
+      "segment": "Munich – Nuremberg",
+      "condition": "CLEAR",
+      "impact_minutes": 0,
+      "cause": null,
+      "expected_clear": null
+    }
+  ],
+
+  "fleet": {
+    "total_trucks": 14,
+    "active": 12,
+    "in_maintenance": 2,
+    "breakdown": 1,
+    "maintenance_trucks": ["TRK-006", "TRK-013"],
+    "breakdown_trucks": ["TRK-011"]
+  },
+
+  "alerts": [
+    {
+      "id": "ALT-001",
+      "type": "DELAY",
+      "severity": "HIGH",
+      "message": "ORD-4823 at risk of missing SLA — perishable goods, 2hr delay",
+      "created_at": "2026-05-01T08:45:00Z",
+      "resolved": false
+    },
+    {
+      "id": "ALT-002",
+      "type": "ROAD",
+      "severity": "MEDIUM",
+      "message": "A2 congestion affecting Hamburg–Berlin corridor. Consider A24 reroute.",
+      "created_at": "2026-05-01T07:30:00Z",
+      "resolved": false
+    },
+    {
+      "id": "ALT-003",
+      "type": "DRIVER",
+      "severity": "LOW",
+      "message": "Ralf Schneider has 4 delays this week — review performance",
+      "created_at": "2026-05-01T09:00:00Z",
+      "resolved": false
+    }
+  ],
+
+  "routes": {
+    "Hamburg-Berlin": {
+      "primary": "A2 via Hannover",
+      "primary_km": 288,
+      "primary_hours": 2.8,
+      "alternate": "A24 via Wittstock",
+      "alternate_km": 302,
+      "alternate_hours": 2.9
+    },
+    "Munich-Frankfurt": {
+      "primary": "A9/A3 via Nuremberg",
+      "primary_km": 392,
+      "primary_hours": 3.8,
+      "alternate": "A8/A7 via Stuttgart",
+      "alternate_km": 420,
+      "alternate_hours": 4.1
+    },
+    "Stuttgart-Cologne": {
+      "primary": "A81/A3 via Frankfurt",
+      "primary_km": 372,
+      "primary_hours": 3.6,
+      "alternate": "A6/A61 via Mannheim",
+      "alternate_km": 385,
+      "alternate_hours": 3.8
+    },
+    "Berlin-Vienna": {
+      "primary": "A9/A1 via Munich",
+      "primary_km": 682,
+      "primary_hours": 6.5,
+      "alternate": "A13/A4 via Dresden",
+      "alternate_km": 710,
+      "alternate_hours": 6.9
+    }
+  }
+}
