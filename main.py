@@ -20,7 +20,7 @@ from pydantic import BaseModel
 
 # ── Config ──────────────────────────────────────────────────────────────────
 OLLAMA_BASE_URL = "http://localhost:11434"
-OLLAMA_MODEL    = "tinyllama"           # small model for low memory systems
+OLLAMA_MODEL    = "gemma4"           # small model for low memory systems
 DATA_FILE       = Path(__file__).parent / "data" / "logistics_data.json"
 FRONTEND_DIR    = Path(__file__).parent / "frontend"
 
