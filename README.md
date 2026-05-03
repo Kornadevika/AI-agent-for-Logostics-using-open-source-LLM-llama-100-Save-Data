@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # 🚛 LogiBot — Logistics AI Agent
 > Route optimization & delivery delay chatbot powered by **Gemma 4** (Ollama) + **FastAPI**
 
@@ -184,3 +185,6 @@ POST /chat
 =======
 # AI-agent-for-Logostics-using-open-source-LLM-llama
 >>>>>>> 53746c027a8ef159e84465174438cbcb2eaa3ab2
+=======
+# AI-agent-for-Logostics-using-open-source-LLM-llama-100-Save-Data
+>>>>>>> 84549d22e0a511a955ece7ede9907e01b2972499
